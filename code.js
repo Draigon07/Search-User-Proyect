@@ -17,6 +17,16 @@
      }
  }
 
+
+ const recc = (datos)=> {
+     datos.forEach(dat =>{
+         console.log(dat.Name)
+     })
+
+ }
+
+ recc(Users)
+
  getDataAPI()
 
  const showData = async(data)=>{
