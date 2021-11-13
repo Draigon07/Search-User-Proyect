@@ -1,50 +1,10 @@
 "use strict"
 
- const url = 'https://jsonplaceholder.typicode.com/users'
+ 
  let fragment = document.createDocumentFragment();
-
-
- const getDataAPI = async ()=>{
-     try{
-         const datosApi = await axios(url);
-         const datos = datosApi.data
-         console.log(datos) 
-         const data = await showData(datos)
-         console.log(data)
-
-     }catch(e){
-
-     }
- }
-
-
- const recc = (datos)=> {
-     datos.forEach(dat =>{
-         console.log(dat.Name)
-     })
-
- }
-
- recc(Users)
-
- getDataAPI()
-
- const showData = async(data)=>{
-     try{
-         const datos = {
-             Nombre: data.nombre,
-             email : data.email
-         }
-    
-         Object.entries(datos).forEach(dat =>{
-             console.log(dat)
-         })
-
-     }catch(e){
-         console.log(E)
-     }
-
- }
+ const container = document.querySelector('.filtro_busqueda');
+ const warning = document.querySelector('.warnings');
+ const names_container = document.querySelector('.names_container')
 
 
  const deleteCom = str =>{      //Eliminar comillas 
@@ -58,27 +18,49 @@
   }
 
 
+ const getDataUsers = (data)=>{
+     const datos = data.forEach(dat =>{
+         const text = parseJson(dat.Name)
+         const  name = document.createElement('h2');
+         name.classList.add('name')
+         name.textContent = deleteCom(text)
+         fragment.appendChild(name)
+         names_container.appendChild(fragment)
+     })
+ }
 
-const cardFilters = document.querySelector('.card-filter');
-const card = document.querySelectorAll('.card')
-const d = document
+ getDataUsers(Users)
+
+ 
+
+ const usersFilters = document.querySelector('.card-filter');
+ const d = document
+ 
+
+ const filters = (input) =>{
+     d.addEventListener('keyup',()=>{
+         const transInput = input.value.toLocaleLowerCase()
+         console.log(transInput)
+         const users = [...document.querySelectorAll('.name')]
+         users.forEach(el => {
+             let text = el.textContent.toLocaleLowerCase();
+             const val = text.includes(transInput)? el.classList.remove("hide"): el.classList.add("hide")  
+         })
+         
+     })  
+ }
+
+ filters(usersFilters)
 
 
+ 
 
-const Filters = (input)=>{
-    d.addEventListener('keyup',()=>{
-        console.log(input.value);
+ 
 
-        card.forEach(el =>{
-            let text = el.textContent.toLocaleLowerCase();
-            console.log(text)
-            const val =  text.includes(cardFilters.value)? el.classList.remove("filter") :el.classList.add("filter");
-        
-        })  
-    })
-}
 
-Filters(cardFilters)
+ 
+
+
 
 
 
