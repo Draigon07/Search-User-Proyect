@@ -1,203 +1,264 @@
+
+
+const grade = (min, max)=>{
+    const n =  Math.random() * (max - min) + min;
+    return Number.parseFloat(n).toFixed(1)
+}
+
+
 const Users = [{
     id: Math.random()*1000,
-    Name: "Carlos"
+    Name: "Carlos",
+    grade:grade(1,5)
 },{
     id: Math.random()*1000,
-    Name: "Julio"
+    Name: "Julio",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Pedro"
+    Name: "Pedro",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Juana"
+    Name: "Juana",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Juan"
+    Name: "Juan",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Alex"
+    Name: "Alex",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Rubi"
+    Name: "Rubi",
+    grade:(grade(1,5))
 
 },{
     id: Math.random()*1000,
-    Name: "Ash"
+    Name: "Ash",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Rebeca"
+    Name: "Rebeca",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Paola"
+    Name: "Paola",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Xiomara"
+    Name: "Xiomara",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Alexandra"
+    Name: "Alexandra",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Carla"
+    Name: "Carla",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Pepa"
+    Name: "Pepa",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Julia"
+    Name: "Julia",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Denisel"
+    Name: "Denisel",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Omar"
+    Name: "Omar",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Leo"
+    Name: "Leo",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Leonardo"
+    Name: "Leonardo",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Rubén"
+    Name: "Rubén",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Sara"
+    Name: "Sara",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Lionel"
+    Name: "Lionel",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Jade"
+    Name: "Jade",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Yuri"
+    Name: "Yuri",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Cristina"
+    Name: "Cristina",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Daniel"
+    Name: "Daniel",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Ernesto"
+    Name: "Ernesto",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "José"
+    Name: "José",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Antonella"
+    Name: "Antonella",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Ana Paula"
+    Name: "Ana Paula",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Melisa"
+    Name: "Melisa",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Malan"
+    Name: "Malan",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Raski"
+    Name: "Raski",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Berlín"
+    Name: "Berlín",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Joe"
+    Name: "Joe",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Love"
+    Name: "Love",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Beck"
+    Name: "Beck",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Bell"
+    Name: "Bell",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Ronald"
+    Name: "Ronald",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Oriel"
+    Name: "Oriel",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Caroline"
+    Name: "Caroline",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Karen"
+    Name: "Karen",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Veronica"
+    Name: "Veronica",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Ian"
+    Name: "Ian",
+    grade:grade(1,5)
+    
 
 },{
     id: Math.random()*1000,
-    Name: "Bryan"
+    Name: "Bryan",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Brian"
+    Name: "Brian",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Benito"
+    Name: "Benito",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Leonel"
+    Name: "Leonel",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Joe Jr"
+    Name: "Joe Jr",
+    grade:grade(1,5)
 
 },{
     id: Math.random()*1000,
-    Name: "Belleza"
+    Name: "Belleza",
+    grade:grade(1,5)
 
 }]
+
+
 
 console.log(Users)
     
