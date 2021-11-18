@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(12, 43, 75);
+    height: 100vh;
+    color: #fff;
+}
+
+.filtro_busqueda{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(23, 95, 167);
+    padding: 10px;
+}
+
+.card-filter{
+    width: 70px;
+    padding: 3px;
+    margin: 8px auto;
+}
+
+.hide{
+    display: none;
+}
+
+.main-title{
+    text-transform: capitalize;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.name{
+    font-family: cursive;
+    text-align: left;
+    margin-left: 15px;
+    text-decoration: underline yellow;
+
+}
+
+.warnings{
+    color: red;
+}
+
+.names_container{
+    display: flex;
+    height: max-content;
+    flex-wrap: wrap;
+    width: 100%;
+   
+}
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */

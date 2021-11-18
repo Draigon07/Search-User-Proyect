@@ -34,7 +34,7 @@
  
 
  const usersFilters = document.querySelector('.card-filter');
- const d = document
+ const d = document;
  
 
  const filters = (input) =>{
